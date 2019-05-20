@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1558368767222,
+  "timestamp": 1558371483967,
   "index": "calculadora-km/index.html",
   "assetGroups": [
     {
@@ -11,7 +11,7 @@
         "calculadora-km/es2015-polyfills.c5dd28b362270c767b34.js",
         "calculadora-km/favicon.ico",
         "calculadora-km/index.html",
-        "calculadora-km/main.1bd4f661080a8dc70329.js",
+        "calculadora-km/main.0008e9c549a66dd7ece4.js",
         "calculadora-km/polyfills.8bbb231b43165d65d357.js",
         "calculadora-km/runtime.26209474bfa8dc87a77c.js",
         "calculadora-km/styles.b279119c2eea80874f69.css"
@@ -51,8 +51,8 @@
     "calculadora-km/assets/mainBg.png": "74bd6a1711df4669ee6d3a77481091dd1f9ac7c8",
     "calculadora-km/es2015-polyfills.c5dd28b362270c767b34.js": "b7a81c61d32b0b12737f0c13f45973ba391cd7f9",
     "calculadora-km/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "calculadora-km/index.html": "f7174a0b32fe7c95064cbc9523fae1d01a345c0d",
-    "calculadora-km/main.1bd4f661080a8dc70329.js": "adaa4f7a3b01158378bea236bd9cd2e2db6e502c",
+    "calculadora-km/index.html": "97fd0d1aa7c58e432ff4d214b07070b36e9f3df5",
+    "calculadora-km/main.0008e9c549a66dd7ece4.js": "fd1b6f0eb1e037c57f005cb4d1c8c9f4920bb917",
     "calculadora-km/polyfills.8bbb231b43165d65d357.js": "ffa449995bf2eba2ccd0a002417214f7eb75e7b5",
     "calculadora-km/runtime.26209474bfa8dc87a77c.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
     "calculadora-km/styles.b279119c2eea80874f69.css": "bedcc02f13289a51d1be4b66320350472705f531"
