@@ -1,6 +1,6 @@
 {
-  "name": "calculadora-FCT",
-  "short_name": "calculadora-FCT",
+  "name": "km-calculator",
+  "short_name": "km-calculator",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
