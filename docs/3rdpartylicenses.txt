@@ -118,6 +118,8 @@ THE SOFTWARE.
 
 @angular/material/icon
 
+@angular/material/progress-bar
+
 @angular/material/snack-bar
 
 @angular/material/toolbar
