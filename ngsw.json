@@ -1,0 +1,84 @@
+{
+  "configVersion": 1,
+  "timestamp": 1599734297727,
+  "index": "/calculadora-fct/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/calculadora-fct/favicon.ico",
+        "/calculadora-fct/index.html",
+        "/calculadora-fct/main.6b4c2c26c0f8166809e8.js",
+        "/calculadora-fct/polyfills-es5.2358bb0a3572486a84ec.js",
+        "/calculadora-fct/polyfills.18b96ae85ed1eb0a981a.js",
+        "/calculadora-fct/runtime.f9956ac3c2762746a398.js",
+        "/calculadora-fct/styles.05102aa6cd88340e5316.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/calculadora-fct/assets/headerBg.jpg",
+        "/calculadora-fct/assets/icons/icon-128x128.png",
+        "/calculadora-fct/assets/icons/icon-144x144.png",
+        "/calculadora-fct/assets/icons/icon-152x152.png",
+        "/calculadora-fct/assets/icons/icon-192x192.png",
+        "/calculadora-fct/assets/icons/icon-384x384.png",
+        "/calculadora-fct/assets/icons/icon-512x512.png",
+        "/calculadora-fct/assets/icons/icon-72x72.png",
+        "/calculadora-fct/assets/icons/icon-96x96.png",
+        "/calculadora-fct/assets/mainBg.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/calculadora-fct/assets/headerBg.jpg": "241e31c8ffa2393c6c2361b2c1f2b1d2b7066c9d",
+    "/calculadora-fct/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/calculadora-fct/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/calculadora-fct/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/calculadora-fct/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/calculadora-fct/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/calculadora-fct/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/calculadora-fct/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/calculadora-fct/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/calculadora-fct/assets/mainBg.png": "74bd6a1711df4669ee6d3a77481091dd1f9ac7c8",
+    "/calculadora-fct/favicon.ico": "78a8270b9d1ff494b6fb8ba67d3dbea11f0b8884",
+    "/calculadora-fct/index.html": "bf8397b193158892d3f2cdfc55e601893ce48d4d",
+    "/calculadora-fct/main.6b4c2c26c0f8166809e8.js": "104951b972192f78b91cd076721e5cf6a735f632",
+    "/calculadora-fct/polyfills-es5.2358bb0a3572486a84ec.js": "314b92563f5fb9d4d53ee0b0530bffaaa7102356",
+    "/calculadora-fct/polyfills.18b96ae85ed1eb0a981a.js": "7d612ac698860d06374188d6ccb5c8cdaf2fa18a",
+    "/calculadora-fct/runtime.f9956ac3c2762746a398.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/calculadora-fct/styles.05102aa6cd88340e5316.css": "c66e893c862124b42fb7d5faf3ff60d6a2ef7385"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
