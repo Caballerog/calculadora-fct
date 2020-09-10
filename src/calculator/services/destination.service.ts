@@ -28,8 +28,8 @@ export class DestinationService {
   }
 
   private _generateRequest(coordinates: string) {
-    //const cors = "https://cors-anywhere.herokuapp.com/";
-    const cors = '';
+    const cors = 'https://cors-anywhere.herokuapp.com/';
+    //const cors = '';
     return `${cors}${DESTINATION_REQUEST.ENDPOINT}${DESTINATION_REQUEST.OUTPUT_FORMAT}origin=${ORIGIN}&destination=${coordinates}&key=${DESTINATION_REQUEST.APIKEY}`;
   }
 }
