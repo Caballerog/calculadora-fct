@@ -1,0 +1,18 @@
+<div class="container">
+  <div
+    fxLayout
+    fxLayout.lt-md="column"
+    fxLayoutAlign="center"
+    fxLayoutGap="10px"
+    fxLayoutGap.lt-md="0"
+  >
+    <app-route-form
+      fxFlex="80%"
+      class="form-container"
+      (formEvent)="receiveFormData($event)"
+      [validDestination]="validDestination"
+    ></app-route-form>
+    <app-results class="result-container" [report]="report"></app-results>
+  </div>
+  <app-map class="map-container" [report]="report"></app-map>
+</div>

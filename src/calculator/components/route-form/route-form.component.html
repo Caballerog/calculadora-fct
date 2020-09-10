@@ -1,0 +1,113 @@
+<mat-card class="container">
+  <mat-card-header>
+    <mat-card-title>
+      <mat-icon>my_location</mat-icon>
+      Origen: <i>{{ originName }}</i>
+    </mat-card-title>
+  </mat-card-header>
+
+  <form [formGroup]="routeForm">
+    <div formArrayName="destinations">
+      <div
+        class="form-element"
+        fxLayout
+        fxLayout.xs="column"
+        fxLayoutAlign="center"
+        fxLayoutGap="10px"
+        *ngFor="
+          let control of destinations.controls;
+          let destinationIndex = index
+        "
+        [formGroupName]="destinationIndex"
+      >
+        <mat-form-field>
+          <mat-label>Destino</mat-label>
+          <input
+            required
+            formControlName="destination"
+            id="destination"
+            class="form-control"
+            placeholder="Oracle Málaga"
+            type="text"
+            [ngClass]="{
+              invalid: isValid(destinationIndex, 'destination')
+            }"
+            matInput
+            [disableControl]="destinationIndex !== businessNumber"
+          />
+          <div *ngIf="isValid(destinationIndex, 'destination')">
+            <div
+              *myError="{
+                control: destinations.controls[destinationIndex]['controls'],
+                field: 'destination',
+                errorType: 'required'
+              }"
+            >
+              Este campo es obligatorio
+            </div>
+          </div>
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Nº visitas</mat-label>
+          <input
+            matInput
+            required
+            formControlName="timesVisited"
+            id="timesVisited"
+            class="form-control"
+            placeholder="2"
+            type="text"
+            [ngClass]="{
+              invalid: isValid(destinationIndex, 'timesVisited')
+            }"
+            [disableControl]="destinationIndex !== businessNumber"
+          />
+          <div *ngIf="isValid(destinationIndex, 'timesVisited')">
+            <div
+              *myError="{
+                control: destinations.controls[destinationIndex]['controls'],
+                field: 'timesVisited',
+                errorType: 'required'
+              }"
+            >
+              Este campo es obligatorio
+            </div>
+            <div
+              *myError="{
+                control: destinations.controls[destinationIndex]['controls'],
+                field: 'timesVisited',
+                errorType: 'pattern'
+              }"
+            >
+              Este campo es numérico
+            </div>
+          </div>
+        </mat-form-field>
+
+        <label> </label>
+
+        <button
+          mat-flat-button
+          color="warn"
+          (click)="deleteDestination(destinationIndex)"
+          [disabled]="destinationIndex === businessNumber"
+        >
+          <mat-icon>close</mat-icon>
+        </button>
+        <button
+          mat-flat-button
+          color="primary"
+          (click)="addDestination(destinationIndex)"
+          [disabled]="!routeForm.valid || destinationIndex !== businessNumber"
+        >
+          Añadir destino
+        </button>
+      </div>
+    </div>
+    <mat-progress-bar
+      mode="indeterminate"
+      *ngIf="this.destinations.length !== businessNumber + 1"
+    ></mat-progress-bar>
+  </form>
+</mat-card>

@@ -1,0 +1,64 @@
+<mat-card class="container">
+  <mat-card-header>
+    <mat-card-title>
+      <mat-icon>assignment</mat-icon>
+      Resultado
+    </mat-card-title>
+  </mat-card-header>
+  <p *ngIf="destinationDistances.length === 0">Introduzca mínimo un destino</p>
+
+  <div *ngIf="destinationDistances.length !== 0">
+    <div fxLayout="column" fxLayoutAlign="start" style="text-align: left">
+      <span>
+        <mat-icon>transfer_within_a_station</mat-icon> Distancia total:
+        <b> {{ totals.distance }}km</b>
+      </span>
+      <span>
+        <mat-icon>attach_money</mat-icon>
+        Coste total:
+        <b>{{ totals.cost }}€</b>
+      </span>
+    </div>
+    <table mat-table class="table">
+      <thead>
+        <tr>
+          <th>Distancia</th>
+          <th>Nº Empresas</th>
+          <th>Horas</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+      <tbody *ngFor="let item of hourCalculation | keyvalue">
+        <tr>
+          <td mat-cell>{{ item.value.range }}</td>
+          <td mat-cell>{{ item.value.routes.length }}</td>
+          <td mat-cell>{{ item.value.hoursGiven }}</td>
+        </tr>
+      </tbody>
+      <tr>
+        <td><b>TOTAL:</b></td>
+        <td></td>
+        <td>
+          <b>{{ totals.hours }}</b>
+        </td>
+      </tr>
+    </table>
+
+    <table>
+      <thead>
+        <th>Dirección</th>
+        <th>Visitas</th>
+        <th>Km</th>
+        <th>Coste</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let destinationDistance of destinationDistances | keyvalue">
+          <td>{{ destinationDistance.value.destination }}</td>
+          <td>{{ destinationDistance.value.timesVisited }}</td>
+          <td>{{ destinationDistance.value.distance }}</td>
+          <td>{{ destinationDistance.value.cost }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</mat-card>

@@ -1,0 +1,25 @@
+/*.container {
+  display: grid;
+  grid-template-columns: [col1] 60% [col2] 40% [end];
+  grid-template-rows: auto auto;
+}
+
+.form-container {
+  grid-column-start: col1;
+  grid-column-end: col2;
+  grid-row: 1/1;
+}
+
+.result-container {
+  grid-column-start: col2;
+  grid-column-end: end;
+  grid-row: 1/1;
+}
+
+.map-container {
+  grid-column-start: col1;
+  grid-column-end: end;
+  grid-row: 2;
+  width: 100%;
+}
+*/

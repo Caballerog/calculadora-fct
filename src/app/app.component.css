@@ -1,0 +1,20 @@
+header {
+  height: 150px;
+  padding: 10px;
+  padding-top: 60px;
+  background-image: linear-gradient(
+    to bottom left,
+    #3bbfc9,
+    #10363a 65%,
+    #ffffff00 65.4%,
+    #ffffff00
+  );
+
+  text-align: right;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 3.5em;
+  margin: 0;
+}

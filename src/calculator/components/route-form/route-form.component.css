@@ -1,0 +1,16 @@
+form {
+  padding: 10px 0;
+}
+
+.form-element {
+  margin: 5px;
+}
+
+.tag {
+  font-size: 0.8em;
+  color: #00798c;
+}
+
+input[type="text"].invalid {
+  border: 2px solid #ff0000;
+}

@@ -1,0 +1,79 @@
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+body {
+  background-color: #161616;
+  /*background-image: url("./assets/mainBg.png");*/
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+mat-card mat-card-header {
+  margin: 20px 12px;
+  margin-top: -50px !important;
+  border-radius: 4px;
+  color: white;
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.27);
+  background-color: #4285f4;
+  justify-content: center;
+  align-content: center;
+}
+mat-card mat-card-title {
+  margin: 20px 0;
+}
+.mat-card-content > :first-child,
+.mat-card > :first-child {
+}
+
+.btn {
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.27);
+  -moz-box-shadow: 3px 3px 5psx 0px rgba(0, 0, 0, 0.27);
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.27);
+  background-color: #00798c;
+  border-radius: 6px;
+  color: #ffffff;
+  border: none;
+  border-bottom: 2px solid #00998f;
+  font-weight: bold;
+}
+
+.red {
+  background-color: #8f1212;
+  border-bottom: 2px solid #690d0d;
+}
+
+.main {
+  width: 60%;
+}
+
+.btn:hover {
+  background-color: #00998f;
+  border-bottom: 2px solid #00798c;
+}
+
+.red:hover {
+  background-color: #690d0d;
+  border-bottom: 2px solid #8f1212;
+}
+.container {
+  /*background-color: rgba(199, 235, 240, 0.6);*/
+  margin: 30px;
+  border-radius: 5px;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+@media only screen and (max-width: 959px) {
+  .container {
+    margin: 50px 10px;
+  }
+}
